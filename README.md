@@ -30,6 +30,18 @@
 	- Study identifier rules, literals, comments, and VS Code shortcuts.
 - `chapter_04_JavaScript_Concepts/`
 	- Continue practicing JavaScript concepts with extra examples.
+	- New files (added recently):
+		- `09_var_let_const.js` — examples comparing `var`, `let`, and `const`.
+		- `10_functions.js` — function basics and examples.
+		- `11_var_explained.js` — deeper explanation of `var` behavior.
+		- `12_let_people_love.js` — practical examples using `let`.
+		- `13_const_explained.js` — notes and examples for `const`.
+
+## 🆕 What's new (Chapter 04)
+
+- Added a new chapter `chapter_04_JavaScript_Concepts` focused on variable declarations and functions.
+- It contains short, focused examples you can run with Node.js to see how `var`, `let`, and `const` behave in different scopes.
+- Use these files to practice: run them, tweak values, and observe console output to build intuition.
 
 ## 🚀 Quick Start
 
