@@ -1,3 +1,108 @@
+# Chapter 1 — Basics
+
+This chapter covers the absolute fundamentals of JavaScript that every developer needs to know. Learn how to run your first program, work with variables, loops, and inspect the Node.js environment.
+
+## Files
+
+| File | Topic | What it shows |
+|------|-------|---------------|
+| `01_Basic.js` | First program | Console output — how to print text to the terminal |
+| `02_JS.js` | Variables and loops | `let` variable, `for` loop, and function calls |
+| `03_Js_Commands.js` | Node.js process object | Platform, Node version, architecture, CWD |
+| `04_HotCode.js` | Function calls in loops | Calling a function 10,000 times and tracking final result |
+
+## Concepts Covered
+
+- Console output with `console.log()`
+- `let` variables and block scoping
+- `for` loops and loop counters
+- Function declaration and invocation
+- Reading Node.js runtime via `process` (platform, version, arch, cwd)
+- Basic performance / hot-code patterns (repeated calls)
+
+---
+
+## Files (explained)
+
+### `01_Basic.js`
+
+Simple program to print a message.
+
+```js
+console.log("THIS IS 1ST PROGRAM");
+```
+
+Run:
+
+```powershell
+node chapter_01_Basics/01_Basic.js
+```
+
+### `02_JS.js`
+
+Variables, loops, and function calls.
+
+```js
+let x = 10;
+console.log(x);
+
+for(let x = 0; x < 10000; x++) {
+    console.log(x);
+    print();
+}
+
+function print() {
+    console.log("Hello World");
+}
+```
+
+Note: the `x` inside the `for` is block-scoped and does not overwrite the outer `x`.
+
+Run:
+
+```powershell
+node chapter_01_Basics/02_JS.js
+```
+
+### `03_Js_Commands.js`
+
+Inspect Node environment.
+
+```js
+console.log(process.platform);
+console.log(process.version);
+console.log(process.arch);
+console.log(process.cwd());
+```
+
+Run:
+
+```powershell
+node chapter_01_Basics/03_Js_Commands.js
+```
+
+### `04_HotCode.js`
+
+Function calls in a tight loop to illustrate repeated execution.
+
+```js
+function add(a, b) { return a + b; }
+let result;
+for (let i = 0; i < 10000; i++) result = add(i, i+1);
+console.log("After 10000 calls:" + result);
+```
+
+Run:
+
+```powershell
+node chapter_01_Basics/04_HotCode.js
+```
+
+---
+
+## Takeaway
+
+Master the building blocks shown here: logging, variables, loops, functions, and inspecting runtime information. These basics make later automation and testing scripts clear and predictable.
 # Chapter 01 — Basics
 
 First steps in JavaScript on Node.js. This chapter gets your environment talking, runs your first `console.log`, verifies the runtime, and shows what happens when the same function is called many times — i.e. hot code behavior.

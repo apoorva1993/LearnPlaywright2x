@@ -1,4 +1,39 @@
-﻿# Chapter 02 — JavaScript Concepts
+﻿
+This chapter covers core JavaScript concepts used throughout the repository: variable declarations, simple mutations, and basic runtime behavior.
+
+## Files
+
+| File | Topic | What it shows |
+|------|-------|---------------|
+| `05_JS_Basics.js` | `var` basics | Simple `var` declaration and reassignment |
+
+## Concepts Covered
+
+- `var` declaration and how reassignment works
+- Differences between `var`, `let`, and `const` are covered more fully in Chapter 4
+
+---
+
+### `05_JS_Basics.js`
+
+```js
+var v = 1;
+console.log(v);
+
+v = 12;
+console.log(v);
+```
+
+Run:
+
+```powershell
+node chapter_02_JavaScript_Concepts/05_JS_Basics.js
+```
+
+## Takeaway
+
+This chapter shows mutation of `var` variables. Prefer `let`/`const` in modern code; `var` exists for legacy compatibility and function-scoping examples.
+# Chapter 02 — JavaScript Concepts
 
 This chapter builds on the basics and explains how JavaScript handles `var`, assignment, and simple runtime output.
 

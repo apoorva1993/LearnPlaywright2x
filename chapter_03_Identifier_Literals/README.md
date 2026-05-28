@@ -1,3 +1,74 @@
+# Chapter 3 — Identifier Rules & Comments
+
+This chapter explains valid identifier names, common naming conventions, and comment styles in JavaScript.
+
+## Files
+
+| File | Topic | What it shows |
+|------|-------|---------------|
+| `06_Identifier_Rules.js` | Valid identifiers | Examples of allowed identifier names (`$`, `_`, letters, digits after first char) |
+| `07_Identifier_Part2.js` | Naming conventions | camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE examples |
+| `08_Comments.js` | Comments | Single-line, multi-line, JSDoc-style comments and ignored lines |
+
+## Concepts Covered
+
+- Identifier rules: must start with a letter, `$`, or `_`, subsequent characters may include digits
+- Common naming conventions and when to use them
+- Comment types and when to use each style
+
+---
+
+### `06_Identifier_Rules.js`
+
+Shows valid identifier patterns and examples.
+
+```js
+var $ = 10;
+var _a = 12;
+var p = 10;
+var ab123 = 34;
+var Name = "Apoorva";
+var name = "APOO";
+```
+
+Run:
+
+```powershell
+node chapter_03_Identifier_Literals/06_Identifier_Rules.js
+```
+
+### `07_Identifier_Part2.js`
+
+Examples of naming styles and when to use them.
+
+```js
+let userName = "camelCase";         // variables/functions
+let UserProfile = "PascalCase";     // classes
+let user_name = "snake_case";       // config or legacy
+const MAX_SIZE = 100;                // constants
+```
+
+Run:
+
+```powershell
+node chapter_03_Identifier_Literals/07_Identifier_Part2.js
+```
+
+### `08_Comments.js`
+
+Shows single-line (`//`), multi-line (`/* ... */`) and JSDoc-style (`/** ... */`) comments.
+
+Run:
+
+```powershell
+node chapter_03_Identifier_Literals/08_Comments.js
+```
+
+---
+
+## Takeaway
+
+Good identifier names and consistent commenting make code easier to read and maintain. Prefer `camelCase` for variables and functions, `PascalCase` for classes, and `SCREAMING_SNAKE_CASE` for constants.
 # Chapter 03 — Identifiers, Literals, and Comments
 
 This chapter teaches the rules for naming JavaScript variables, the conventions used in code, and how comments make code easier to read.
